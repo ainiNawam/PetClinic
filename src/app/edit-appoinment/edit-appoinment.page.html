@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Update<br>Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+
+    <!-- <ion-text color="favourite">
+      <p>Update Appoinment</p>
+    </ion-text> -->
+    <ion-text color="favourite">
+      <p>Pets owner details</p>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Pet's Owner Name</ion-label>
+      <ion-input type="text" [(ngModel)]="appoinment.name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="your@gmail.com" [(ngModel)]="appoinment.email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Phone No</ion-label>
+      <ion-input type="phone" placeholder="01123456789" [(ngModel)]="appoinment.phone" required></ion-input>
+    </ion-item>
+
+    <ion-text color="favourite">
+      <p>Pets details</p>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Pet's Name</ion-label>
+      <ion-input type="text" [(ngModel)]="appoinment.petName" required></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>Species</ion-label>
+      <ion-select value="Dog" okText="Okay" [(ngModel)]="appoinment.enquiry" cancelText="Dismiss">
+        <ion-select-option value="Dog">Dog</ion-select-option>
+        <ion-select-option value="Cat">Cat</ion-select-option>
+        <ion-select-option value="Hamster">Hamster</ion-select-option>
+        <ion-select-option value="Rabbit">Rabbit</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Breed</ion-label>
+      <ion-input [(ngModel)]="appoinment.message"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select value="Male" okText="Okay" [(ngModel)]="appoinment.gender" cancelText="Dismiss">
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-text color="favourite">
+      <p>Select date</p>
+    </ion-text>
+    
+    <ion-item>
+      <ion-input type="date" placeholder="Choose Date" [(ngModel)]="appoinment.date" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="time" placeholder="Choose Time" [(ngModel)]="appoinment.time" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="light" (click)="updateAppoinment(appoinment)">
+      <ion-icon slot="start" name="send"></ion-icon>
+      Update
+    </ion-button>
+
+    <ion-button expand="block" color="light" [routerLink]="['/index']">
+      <ion-icon slot="start" name="home"></ion-icon>
+      Home
+    </ion-button>
+   </div>
+</ion-content>
+
+<!-- <ion-footer>
+  <ion-toolbar class="ion-text-center" color="kuptm">
+    <ion-title>Copyright</ion-title>
+  </ion-toolbar>
+</ion-footer> -->

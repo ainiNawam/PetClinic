@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons> -->
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <p class="ion-text-center">
+    <img src="assets/Logo.jpg" width=70%>
+  </p> -->
+  <ion-card-header>
+    <ion-card-title><center><b>SN Pet's Care </b></center></ion-card-title>
+  </ion-card-header>
+  <ion-card>
+  <video
+  width="100%"
+  controls="controls"
+  preload="metadata"
+
+  webkit-playsinline="webkit-playsinline"
+  class="videoPlayer">
+
+  <!-- link with assets/videoName -->
+  <source src="assets/ad.mp4" type="video/mp4"/>
+  </video>
+</ion-card>
+  <ion-grid fixed align="center">
+    <ion-row>
+
+      <ion-col size="6">
+        <ion-button [routerLink]="['/toys']" expand="full" shape="round" color="light" size="default">
+          <!-- <ion-icon slot="end" name="send"></ion-icon> -->
+          About us
+        </ion-button>
+      </ion-col>
+    
+        <ion-col size="6">
+          <ion-button [routerLink]="['/services']"  expand="full" shape="round" color="light" size="default" >
+            <!-- <ion-icon slot="end" name="call-outline"></ion-icon> -->
+            Services
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/doctors']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            Doctors
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6" >
+          <ion-button [routerLink]="['/product']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            Products
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/open']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            Opening<br>Hours
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/gallery']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            Gallery
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/appoinment']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            Book<br>Appointment
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/contact']" eexpand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            Fedback
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/view-appoinment']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            My<br>appoiment
+          </ion-button>
+        </ion-col>
+
+        
+
+        <ion-col size="6">
+          <ion-button [routerLink]="['/view-post']" expand="full" shape="round" color="light" size="default">
+            <!-- <ion-icon slot="end" name="school-outline"></ion-icon> -->
+            View<br>Fedback
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-content>
